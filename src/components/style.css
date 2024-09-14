@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+   margin: 0;
+   padding: 0;
+   height: 100%;
+   font-family: Arial, sans-serif;
+}
+
+body {
+   background-image: url('/images/bg.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   height: 100vh; 
+   overflow: hidden; 
+}
+
+.container {
+    width: 60%;
+    height: 67vh;
+    margin: 7% auto;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.9); 
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+  }
+  .container h1{
+    text-align: center;
+    margin-top: 4%;
+    letter-spacing: 2px;
+    text-shadow:
+    1px 1px 2px black,
+    0 0 1em black;
+} 
+.container form{
+    margin: 2% 0% 0% 40%;
+}
+.container form input{
+    margin:5% 0% 0% 0%;
+    width: 30%;
+    border: none;
+    outline: none;
+    border-bottom:2px solid black;
+    background: transparent;
+    border-radius: 14px;
+}
+.container form input::placeholder{
+    font-weight: 600;
+    font-size: 15px;
+    color: black;
+    padding: 0% 0% 0% 12%;
+}
+.container form #submitbutton{
+    width:20%;
+    height: 3vh;
+    margin: 5% 0% 0% 5%;
+    border: 1px solid black;
+    padding: 5px 20px;
+    /* border: none;
+    outline: none; */
+    border-radius: 6px;
+    text-transform: capitalize;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-weight: 600;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9); 
+    transition: box-shadow 0.3s ease-in-out;
+}
+.container form #submitbutton:hover{
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    background-color:black;
+    color: white;
+}
+.container form .error{
+    position: absolute;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.1); 
+    border-radius: 15px;
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    /* border: 1px solid rgba(255, 255, 255, 0.3);  */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 6px 12px rgba(0, 0, 0, 0.1); 
+    padding: 1px;
+    color: red;
+    font-size: 16px;
+    max-width: 1050px;
+    margin: 1% 0% 0% 0%;
+}
